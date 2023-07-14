@@ -1,0 +1,9 @@
+.BotonDeRegistro{
+    border:1px solid gray;
+    border-radius:5px;
+    transition:0.1s;
+} 
+.BotonDeRegistro:active{
+    background:rgb(170, 170, 170) !important;
+    color:white;
+}

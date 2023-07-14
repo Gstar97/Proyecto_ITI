@@ -1,0 +1,26 @@
+.header{
+    background:white;
+}
+.nav-link{
+    color:rgb(53, 53, 53) !important;  
+    font-family:Helvetica;
+    transition:0.1s !important;
+
+}
+.nav-link:hover{
+    color:rgb(34, 34, 34) !important;
+}
+.nav-link:active{
+    color:rgb(0, 0, 0) !important;
+}
+.loginuser{
+    background-color:orangered !important;
+    color:white !important;
+    border-radius:5px;
+}
+.loginuser:hover{
+    color:white !important;
+}
+.loginuser:active{
+    background-color:rgb(252, 94, 36) !important;
+}

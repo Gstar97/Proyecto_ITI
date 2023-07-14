@@ -1,0 +1,13 @@
+footer{
+    background-color:rgb(29, 29, 29);
+    color:white;
+}
+.derechos{
+    filter:opacity(50%)
+}
+footer section section ul li a svg{
+    color:white;
+}
+footer section section ul li a svg:hover{
+    color:rgb(255, 51, 0);
+}

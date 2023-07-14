@@ -1,0 +1,16 @@
+.carousel-item img{
+    filter:brightness(50%) !important;
+}
+.datos{
+    color:rgb(39, 39, 39) !important;
+}
+.informacion{
+    background-color:#F4740C;
+
+}
+.funcionamiento{
+    background-color:#F48424;
+}
+.planes{
+    background-color:#F49434;
+}
