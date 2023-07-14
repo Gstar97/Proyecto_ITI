@@ -7,3 +7,7 @@
     background:rgb(170, 170, 170) !important;
     color:white;
 }
+.login{
+    border:1px solid gray;
+    border-radius:5px;
+}

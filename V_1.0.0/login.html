@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header fixed-top fixed-top">
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-md ">
             <section class="container-fluid">
                 <a href="#" class="navbar-brand">
                     <img src="imagenes/logo+empresa.png" alt="Logo" width="80" class="d-inline-block align-text-center">
@@ -27,11 +27,23 @@
         </nav>
     </header>
 
-    <section>
-        <p>Cédula de identidad</p>
-        <input type="text" class="">
-        <p>Contraseña</p>
-        <input type="password" class="">
+  <section class="container text-center">
+    <section class="row align-items-start my-5"></section>
+    <section class="row align-items-start my-5"></section>
+    <section class="row align-items-start">
+        <section class="col"></section>
+        <section class="login col px-0 py-5">
+            <h1>Iniciar sesion</h1>
+            <p class="">Cédula de identidad</p>
+            <input type="text" maxlength="8" placeholder="Ej:58449578" class="">
+            <p>Contraseña</p>
+            <input type="password" class="">
+            <section class="col">
+                <input class="mt-4" type="button" value="acceder">
+            </section>
+        </section>
+        <section class="col"></section>
+    </section>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
