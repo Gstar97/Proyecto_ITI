@@ -19,7 +19,7 @@
                   <ul class="navbar-nav">
                     <li class="nav-item me-2">
                         <a class="BotonDeRegistro nav-link px-2 py-1 me-3 d-flex" href="#">
-                            Registrarse
+                            Iniciar sesion
                         </a>
                     </li>
                   </ul>
@@ -27,27 +27,43 @@
         </nav>
     </header>
 
-  <section class="container text-center">
-    <section class="row align-items-start my-5">
-        <section class="col"></section>
-        <section class="login col px-3 py-5">
-            <h1>Iniciar sesion</h1>
-            <p class="my-1">Cédula de identidad</p>
-            <input type="text" maxlength="8" id="txtCedulaLogin" placeholder="Ej:58449578" class="">
-            <p class="my-1">Contraseña</p>
-            <input type="password" id="txtClaveLogin">
-            <section class="col">
-                <input class="BotonAcceder mt-4 px-4 py-2" type="button" value="Iniciar">
+    <section class="container text-center">
+        <section class="registro row align-items-start my-5">
+            <section class="col px-0 py-5">
+                <p class="my-1">Cédula de identidad</p>
+                <input type="text" maxlength="8" placeholder="Ej:58449578" class="">
+                <p class="my-1">Nombre</p>
+                <input type="text" maxlength="20" class="">
+                <p class="my-1">Apellido</p>
+                <input type="text" maxlength="20" class="">
+                <p class="my-1">Email</p>
+                <input type="text" maxlength="20" class="">
+                <p class="my-1">Telefono</p>
+                <input type="text" class="">
+            </section>
+            <section class="col px-0 py-5">
+                <p class="my-1">Direccion</p>
+                <input type="text" class="">
+                <p class="my-1">Barrio</p>
+                <input type="text" class="">
+                <p class="my-1">Contraseña</p>
+                <input type="text" class="">
+                <p class="my-1">Confirmar contraseña</p>
+                <input type="password" class="">
+                <p class="my-1">Tipo cliente</p>
             </section>
         </section>
-        <section class="col"></section>
+        <section class="row align-items-start">
+            <section class="col">
+                <input type="checkbox">
+            <input type="button" class="BotonAcceder" value="registro">
+            </section>
+        </section>
     </section>
-    </section>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
     integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
     crossorigin="anonymous"></script>
 </body>
