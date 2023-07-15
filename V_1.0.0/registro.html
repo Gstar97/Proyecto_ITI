@@ -32,29 +32,39 @@
             <section class="col"></section>
             <section class="col">
                 <p class="my-1">Cédula de identidad</p>
-                <input type="text" maxlength="8" placeholder="Ej:58449578" class="">
+                <input type="text" maxlength="8" placeholder="Ej:58449578" class="" id="txtCedulaRegistro">
+                
                 <p class="my-1">Nombre</p>
-                <input type="text" maxlength="20" class="">
+                <input type="text" maxlength="20" class="" id="txtNombreRegistro">
+                
                 <p class="my-1">Apellido</p>
-                <input type="text" maxlength="20" class="">
+                <input type="text" maxlength="20" class="" id="txtApellidoRegistro">
+                
                 <p class="my-1">Email</p>
-                <input type="text" maxlength="20" class="">
+                <input type="text" maxlength="20" class="" id="txtEmailRegistro">
+                
                 <p class="my-1">Telefono</p>
-                <input type="text" class="">
+                <input type="text" class="" id="txtTelefonoRegistro">
+            
             </section>
+            
             <section class="col">
                 <p class="my-1">Direccion</p>
-                <input type="text" class="">
+                <input type="text" class="" id="txtDireccionRegistro">
+            
                 <p class="my-1">Barrio</p>
-                <select id="barrio">
+                <select id="slcBarrioRegistro">
                     <option>Relleno</option>
                 </select>
+            
                 <p class="my-1">Contraseña</p>
-                <input type="text" class="">
+                <input type="password" class="" id="txtClaveRegistro">
+            
                 <p class="my-1">Confirmar contraseña</p>
-                <input type="password" class="">
+                <input type="password" class="" id="txtConfirmarClaveRegistro">
+            
                 <p class="my-1">Tipo cliente</p>
-                <select id="cliente">
+                <select id="slcTipoClienteRegistro">
                     <option>Relleno</option>
                 </select>
             </section>
@@ -66,11 +76,14 @@
             <section class="col">
                 <p>Acepta <a href="#">terminos y servicios</a>
                     <input type="checkbox">
-                    <input type="button" class="BotonAcceder mx-5" value="registro">
+                    <input type="button" class="BotonAcceder mx-5" value="registro" id="btnRegistro">
                 </p>
             </section>
         </section>
     </section>
+    <script src="Js/jquery-3.7.0.js"></script>
+    <script src="Js/clases.js"></script>
+    <script src="Js/registro.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
