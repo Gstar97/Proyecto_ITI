@@ -23,3 +23,8 @@
 .BotonAcceder:active{
     background-color:black;
 }
+
+.registro{
+    border:1px solid gray;
+    border-radius:5px;
+}

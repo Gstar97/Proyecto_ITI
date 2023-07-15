@@ -28,8 +28,9 @@
     </header>
 
     <section class="container text-center">
-        <section class="registro row align-items-start my-5">
-            <section class="col px-0 py-5">
+        <section class=" row align-items-start my-5">
+            <section class="col"></section>
+            <section class="col">
                 <p class="my-1">Cédula de identidad</p>
                 <input type="text" maxlength="8" placeholder="Ej:58449578" class="">
                 <p class="my-1">Nombre</p>
@@ -41,22 +42,32 @@
                 <p class="my-1">Telefono</p>
                 <input type="text" class="">
             </section>
-            <section class="col px-0 py-5">
+            <section class="col">
                 <p class="my-1">Direccion</p>
                 <input type="text" class="">
                 <p class="my-1">Barrio</p>
-                <input type="text" class="">
+                <select id="barrio">
+                    <option>Relleno</option>
+                </select>
                 <p class="my-1">Contraseña</p>
                 <input type="text" class="">
                 <p class="my-1">Confirmar contraseña</p>
                 <input type="password" class="">
                 <p class="my-1">Tipo cliente</p>
+                <select id="cliente">
+                    <option>Relleno</option>
+                </select>
             </section>
+            
+            <section class="col"></section>
+            
         </section>
         <section class="row align-items-start">
             <section class="col">
-                <input type="checkbox">
-            <input type="button" class="BotonAcceder" value="registro">
+                <p>Acepta <a href="#">terminos y servicios</a>
+                    <input type="checkbox">
+                    <input type="button" class="BotonAcceder mx-5" value="registro">
+                </p>
             </section>
         </section>
     </section>
