@@ -1,5 +1,6 @@
 class Registro {
-    constructor(unId, unaCedula, unNombre, unApellido, unCelular, unEmail, unaClave, unBarrio, unaDireccion, unaEsquina) {
+    constructor(unId, unaCedula, unNombre, unApellido, unCelular, unEmail, unaClave,
+      unaConfirmacionClave, unBarrio, unaDireccion, unaEsquina) {
       this.Id = unId;
       this.cedula = unaCedula;
       this.nombre = unNombre;
@@ -7,6 +8,7 @@ class Registro {
       this.celular = unCelular;
       this.email = unEmail;
       this.clave = unaClave;
+      this.confirmacionClave = unaConfirmacionClave
       this.barrio = unBarrio;
       this.direccion = unaDireccion;
       this.esquina = unaEsquina;
