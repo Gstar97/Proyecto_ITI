@@ -1,24 +1,38 @@
-$("#btnRegistro").click(tomarValores);
-let barrio = new Barrio()
-cargarComboBarrios ();
+window.addEventListener("load", inicio)
 
-function tomarValores(){
-    let cedulaRegistro = Number($("#txtCedulaRegistro").val());
-    let nombreRegistro = $("#txtNombreRegistro").val();
-    let apellidoRegistro = $("#txtApellidoRegistro").val();
-    let emailRegistro = $("#txtEmailRegistro").val();
-    let telefonoRegistro = $("#txtTelefonoRegistro").val();
-    let direccionRegistro = $("#txtDireccionRegistro").val();
-    let barrioRegistro = $("#slcBarrioRegistro").val();
-    let claveRegistro = $("#txtClaveRegistro").val();
-    let confirmacionClaveRegistro = $("#txtConfirmarClaveRegistro").val();
-    let tipoClienteRegistro = $("#slcTipoClienteRegistro").val();
+function inicio() {
+    
+    document.querySelector("#btnRegistro").addEventListener("click", tomarValores);
+    cargarComboBarrios();
 }
 
+function tomarValores() {
+    let cedulaRegistro = Number(document.querySelector("#txtCedulaRegistro").value);
+    let nombreRegistro = document.querySelector("#txtNombreRegistro").value;
+    let apellidoRegistro = document.querySelector("#txtApellidoRegistro").value;
+    let emailRegistro = document.querySelector("#txtEmailRegistro").value;
+    let telefonoRegistro = Number(document.querySelector("#txtTelefonoRegistro").value);
+    let direccionRegistro = document.querySelector("#txtDireccionRegistro").value;
+    let barrioRegistro = document.querySelector("#slcBarrioRegistro").value;
+    let claveRegistro = document.querySelector("#txtClaveRegistro").value;
+    let confirmacionClaveRegistro = document.querySelector("#txtConfirmarClaveRegistro").value;
+    let tipoClienteRegistro = document.querySelector("#slcTipoClienteRegistro").value;
+
+    
+    
+}
+
+let sistema = new Sistema()
 function cargarComboBarrios() {
-    for (let i = 1; i < barrios.length; i++){
-        const unBarrio = barrios[i];
-        $("#slcBarrioRegistro").append(`
-        <option value = ${unBarrio.id}>${unBarrio.barrio}</option> `)
-    }
-}   
+   for (let i = 0; i < sistema.barrios.length; i++) {
+    const unBarrio = sistema.barrios[i];
+    
+    document.querySelector("#slcBarrioRegistro").innerHTML +=`
+    <option value = ${unBarrio.id}>${unBarrio.barrio}</option>`
+   }
+   }
+
+    
+
+
+
