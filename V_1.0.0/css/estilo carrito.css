@@ -1,0 +1,9 @@
+.barra{
+    background-color:orangered;
+}
+.listaCarrito li{
+    border:1px solid gray;
+}
+.total1, .total2{
+    border:1px solid gray;
+}
