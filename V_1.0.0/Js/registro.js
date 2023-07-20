@@ -11,7 +11,7 @@ function cargarComboBarrios() {
     for (let i = 0; i < sistema.barrios.length; i++) {
         const unBarrio = sistema.barrios[i];
 
-        document.querySelector("#slcBarrioRegistro").innerHTML += `
+        document.querySelector("#validationCustom04").innerHTML += `
     <option value = ${unBarrio.id}>${unBarrio.barrio}</option>`
     }
 }
@@ -23,7 +23,7 @@ function tomarValores() {
     let emailRegistro = document.querySelector("#txtEmailRegistro").value;
     let telefonoRegistro = document.querySelector("#txtTelefonoRegistro").value;
     let direccionRegistro = document.querySelector("#txtDireccionRegistro").value;
-    let barrioRegistro = document.querySelector("#slcBarrioRegistro").value;
+    let barrioRegistro = document.querySelector("#validationCustom04").value;
     let claveRegistro = document.querySelector("#txtClaveRegistro").value;
     let confirmacionClaveRegistro = document.querySelector("#txtConfirmarClaveRegistro").value;
     let tipoClienteRegistro = document.querySelector("#slcTipoClienteRegistro").value;
