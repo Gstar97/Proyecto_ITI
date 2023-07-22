@@ -1,13 +1,17 @@
-$("#btnIniciarSesion").click(iniciarSesion)
+window.addEventListener("load", inicio);
 
-function iniciarSesion (){
-    let cedulaLogin = Number($("#txtCedulaLogin").val())
-    let claveLogin = $("#txtClaveLogin").val()
+function inicio (){
+    document.querySelector("#btnIniciarSesion").addEventListener("click", tomarValores)
+}
 
-    if (!isNaN(cedulaLogin) && !cedulaLogin === ""){
-        $("#pMostrarLogin").html(`Ha iniciado sesion correctamente`)
-    } else {
-        $("#pMostrarLogin").html(`Ingrese una cedula valida`)
+function tomarValores(){
+   let cedulaLogin = document.querySelector("#txtCedulaLogin").value;
+   let clave = document.querySelector("#txtClaveLogin").value;
+   validarInicioSesion (cedulaLogin, clave)
+}
 
+function validarInicioSesion (unaCedula, unaClave){
+    if (unaCedula < 8){
+        document.querySelector("#pMostrarLogin").innerHTML=`Formato de cedula`
     }
 }

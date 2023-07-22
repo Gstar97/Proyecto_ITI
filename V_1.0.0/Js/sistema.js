@@ -1,5 +1,5 @@
 class Sistema {
-    constructor (){
+    constructor() {
         this.barrios = [
             new Barrio(2, "Palermo"),
             new Barrio(3, "Punta Carretas"),
@@ -62,10 +62,20 @@ class Sistema {
             new Barrio(60, "Casavalle"),
             new Barrio(61, "Flor de Maroñas"),
             new Barrio(62, "Cerro")
-          ];
+        ];
 
-          this.registros = [
+        this.registros = [
 
-          ];
+        ];
+    }
+
+    verificarRegistroRepetido(unaCedulaRegistro, unEmailRegistro) {
+        for (const unRegistro of this.registros) {
+            if (unRegistro.cedula === unaCedulaRegistro || unRegistro.email === unEmailRegistro) {
+                return true;
+            } else {
+            }
+            return false;
+        }
     }
 }
