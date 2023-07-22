@@ -15,7 +15,7 @@ $Registro = new registro (cedulaRegistro, nombreRegistro, apellidoRegistro, emai
                          txtClaveRegistro, txtConfirmarClaveRegistro, slcTipoClienteRegistro);
 
 echo $Registro -> getCedula();
-echo "hola";
+
 
 ?>
 
