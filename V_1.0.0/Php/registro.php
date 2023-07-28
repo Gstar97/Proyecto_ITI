@@ -16,6 +16,7 @@ $Registro = new registro (cedulaRegistro, nombreRegistro, apellidoRegistro, emai
 
 echo $Registro -> getCedula();
 
+
 ?>
 
 
