@@ -1,17 +1,29 @@
 window.addEventListener("load", inicio);
 
-function inicio (){
-    document.querySelector("#btnIniciarSesion").addEventListener("click", tomarValores)
+function inicio() {
+    document.querySelector("#btnIniciarSesion").addEventListener("click", tomarValores);
 }
 
-function tomarValores(){
-   let cedulaLogin = document.querySelector("#txtCedulaLogin").value;
-   let clave = document.querySelector("#txtClaveLogin").value;
-   validarInicioSesion (cedulaLogin, clave)
+let sistema = new Sistema()    
+function tomarValores() {
+    let cedulaLogin = document.querySelector("#txtCedulaLogin").value;
+    let clave = document.querySelector("#txtClaveLogin").value;
+    validarInicioSesion(cedulaLogin, clave);
 }
 
-function validarInicioSesion (unaCedula, unaClave){
-    if (unaCedula < 8){
-        document.querySelector("#pMostrarLogin").innerHTML=`Formato de cedula`
+function validarInicioSesion(unaCedula, unaClave) {
+    document.querySelector("#pMostrarLogin").innerHTML = "";
+    if (isNaN(unaCedula)) {
+        document.querySelector("#pMostrarLogin").innerHTML = `Formato de cedula invalido`;
+    } else if (unaCedula.length < 8) {
+        document.querySelector("#pMostrarLogin").innerHTML = `Formato de cedula invaldo`;
+    }
+    for (const registro of sistema.registros) {
+        if (unaCedula === registro.cedula && unaClave === registro.clave){
+            window.location.href = `index.html`;
+        } else {
+            document.querySelector("#pMostrarLogin").innerHTML = `Cedula o contraseña incorrecta`
+        }
+            
     }
 }
