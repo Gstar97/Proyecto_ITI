@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<from id="registro">
+<form id="registro">
     <header class="header">
         <nav class="navbar navbar-expand-md ">
             <section class="container-fluid">
@@ -37,37 +37,37 @@
                 <section class="col"></section>
                 <section class="col">
                     <p class="my-1">Cédula de identidad</p>
-                    <input type="text" maxlength="8" placeholder="Ej:58449578" class="" id="txtCedulaRegistro">
+                    <input type="text" maxlength="8" placeholder="Ej:58449578" class="" name="txtCedulaRegistro">
 
                     <p class="my-1">Nombre</p>
-                    <input type="text" maxlength="20" class="" id="txtNombreRegistro">
+                    <input type="text" maxlength="20" class="" name="txtNombreRegistro">
 
                     <p class="my-1">Apellido</p>
-                    <input type="text" maxlength="20" class="" id="txtApellidoRegistro">
+                    <input type="text" maxlength="20" class="" name="txtApellidoRegistro">
 
                     <p class="my-1">Email</p>
-                    <input type="text" maxlength="20" class="" id="txtEmailRegistro">
+                    <input type="text" maxlength="20" class="" name="txtEmailRegistro">
 
                     <p class="my-1">Telefono</p>
-                    <input type="text" class="" id="txtTelefonoRegistro">
+                    <input type="text" class="" name="txtTelefonoRegistro">
 
                 </section>
 
                 <section class="col">
                     <p class="my-1">Direccion</p>
-                    <input type="text" class="" id="txtDireccionRegistro">
+                    <input type="text" class="" name="txtDireccionRegistro">
 
                     <p class="my-1">Esquina</p>
-                    <input type="text" class="" id="txtEsquinaRegistro">
+                    <input type="text" class="" name="txtEsquinaRegistro">
 
                     <p class="my-1">Barrio</p>
                     <select id="slcBarrioRegistro">Seleccione...</select>
 
                     <p class="my-1">Contraseña</p>
-                    <input type="password" class="" id="txtClaveRegistro">
+                    <input type="password" class="" name="txtClaveRegistro">
 
                     <p class="my-1">Confirmar contraseña</p>
-                    <input type="password" class="" id="txtConfirmarClaveRegistro">
+                    <input type="password" class="" name="txtConfirmarClaveRegistro">
 
                     <p class="my-1">Tipo cliente</p>
                     <select id="slcTipoClienteRegistro">
@@ -84,12 +84,13 @@
         <section class="col">
             <p>Acepta <a href="#">terminos y servicios</a>
                 <input type="checkbox" id="chkTerminos">
-                <input type="button" class="BotonAcceder mx-5" value="registro" id="btnRegistro">
+                <input type="submit" class="BotonAcceder mx-5">
             </p>
         </section>
     </section>
     </section>
-</from>
+</form>
+    <script src="Js/jquery-3.6.4.min.js"></script>
     <script src="Js/clases.js"></script>
     <script src="Js/sistema.js"></script>
     <script src="Js/registro.js"></script>

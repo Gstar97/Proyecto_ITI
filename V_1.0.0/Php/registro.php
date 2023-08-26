@@ -1,5 +1,5 @@
 <?php
-require "clases.php";
+
 $cedulaRegistro = $_POST["txtCedulaRegistro"];
 $nombreRegistro = $_POST["txtNombreRegistro"];
 $apellidoRegistro = $_POST["txtApellidoRegistro"];
@@ -11,10 +11,7 @@ $claveRegistro = $_POST["txtClaveRegistro"];
 $confirmacionClaveRegistro = $_POST["txtConfirmarClaveRegistro"];
 $tipoClienteRegistro = $_POST["slcTipoClienteRegistro"];
 
-$Registro = new registro (cedulaRegistro, nombreRegistro, apellidoRegistro, emailRegistro, telefonoRegistro, direccionRegistro, barrioRegistro,
-                         txtClaveRegistro, txtConfirmarClaveRegistro, slcTipoClienteRegistro);
-
-echo $Registro -> getCedula();
+echo json_encode("Registro exitoso");
 
 
 ?>
