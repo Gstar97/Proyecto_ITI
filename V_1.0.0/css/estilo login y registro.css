@@ -28,6 +28,17 @@
     border:1px solid gray;
     border-radius:5px;
 }
-
+/*Boton login*/
+#btnIniciarSesion{
+    color:white;
+    background-color:orangered;
+    border-radius:5px;
+    border:0px;
+    font-size:20px;
+    transition:0.1s;
+}
+#btnIniciarSesion:active{
+    background-color:#1D1D1D;
+}
 
   
