@@ -11,8 +11,37 @@
 <body>
     <form>
         <header>
-            
+            <nav class="navbar navbar-expand-lg bg-light">
+                <section class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <section class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <section class="navbar-nav">
+                      <a class="nav-link" href="#">Cerrar sesion</a>
+                    </section>
+                  </section>
+                </section>
+              </nav>
         </header>
+
+        <section class="row">
+            <section class="lista col">
+                <ul>
+                    <li>HOLA</li>
+                    <li>HOLA</li>
+                    <li>HOLA</li>
+                    <li>HOLA</li>
+                    <li>HOLA</li>
+                </ul>
+            </section>
+            <section class="sistema col">
+                <input type="text" id="AsigUsuario" placeholder="Gmail">
+                <input type="text" id="AsigRol" placeholder="rol">
+                <input type="button" id="asignar" value="asignar">
+            </section>
+        </section>
     </form>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
