@@ -14,7 +14,7 @@
 
 </head>
 <body>
-    <from id="login">
+<from id="login">
     <header class="header">
         <nav class="navbar navbar-expand-md ">
             <section class="container-fluid">
@@ -34,23 +34,31 @@
     </header>
 
   <section class="container text-center">
-    <section class="row align-items-start my-5">
+    <section class="row align-items-start my-2">
         <section class="col"></section>
-        <section class="login col px-3 py-5">
-            <h1>Iniciar sesion</h1>
-            <p class="">Cédula de identidad</p>
+        <section class="col px-3 py-5">
+            <section class="login">
+                <h3>INICIAR SESION</h3>
+                <p class="my-2 mt-4">Cédula de identidad</p>
+                <input type="text" maxlength="8" id="txtCedulaLogin" class="">
+                <p class="my-2">Contraseña</p>
+                <input type="password" id="txtClaveLogin">
             
-            <input type="text" maxlength="8" id="txtCedulaLogin" class="">
-            <p class="my-1">Contraseña</p>
-            <input type="password" id="txtClaveLogin">
-            <section class="col">
-                <input class="mt-4" type="button" value="Iniciar sesion" id="btnIniciarSesion">
-                <p id="pMostrarLogin"></p>
+                <section class="col my-3">
+                    <input class="mt-4 py-2 px-2" type="button" value="Iniciar sesion" id="btnIniciarSesion">
+                </section>
             </section>
+            <p class="mt-4" id="pMostrarLogin"></p>
         </section>
         <section class="col"></section>
     </section>
-    </section>
+  </section>
+
+  <footer class="fixed-bottom">
+   <section class="row text-center mx-0 my-0">
+    <p class="derechos py-2 my-0">© 2023 - Todos los derechos reservados. | Desarrollado por BugSlayer</p>
+   </section>
+  </footer>
 </from>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
