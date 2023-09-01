@@ -31,64 +31,67 @@
         </nav>
     </header>
 
-    <section class="container row text-center mx-5">
-       
-            <section class="align-items-start my-5">
-                
-                <section class="col">
-                    <p class="my-1">Cédula de identidad</p>
-                    <input type="text" maxlength="8" placeholder="Ej:58449578" class="" name="txtCedulaRegistro">
+    <section class="registro container row text-center mx-5">    
+        <section class="col-6">
+            <p class="my-1">Cédula de identidad</p>
+            <input type="text" maxlength="8" class="" name="txtCedulaRegistro">
 
-                    <p class="my-1">Nombre</p>
-                    <input type="text" maxlength="20" class="" name="txtNombreRegistro">
+            <p class="my-1">Nombre</p>
+            <input type="text" maxlength="20" class="" name="txtNombreRegistro">
 
-                    <p class="my-1">Apellido</p>
-                    <input type="text" maxlength="20" class="" name="txtApellidoRegistro">
+            <p class="my-1">Apellido</p>
+            <input type="text" maxlength="20" class="" name="txtApellidoRegistro">
 
-                    <p class="my-1">Email</p>
-                    <input type="text" maxlength="20" class="" name="txtEmailRegistro">
+            <p class="my-1">Email</p>
+            <input type="text" maxlength="20" class="" name="txtEmailRegistro">
 
-                    <p class="my-1">Telefono</p>
-                    <input type="text" class="" name="txtTelefonoRegistro">
+            <p class="my-1">Telefono</p>
+            <input type="text" class="" name="txtTelefonoRegistro">
 
-                </section>
+            <p class="my-1">Tipo cliente</p>
+            <select id="slcTipoClienteRegistro">
+                <option>Seleccione...</option>
+            </select>
 
-                <section class="col">
-                    <p class="my-1">Direccion</p>
-                    <input type="text" class="" name="txtDireccionRegistro">
+            
+        </section>
+        <section class="col-6">
+            <p class="my-1">Direccion</p>
+            <input type="text" class="" name="txtDireccionRegistro">
 
-                    <p class="my-1">Esquina</p>
-                    <input type="text" class="" name="txtEsquinaRegistro">
+            <p class="my-1">Esquina</p>
+            <input type="text" class="" name="txtEsquinaRegistro">
 
-                    <p class="my-1">Barrio</p>
-                    <select id="slcBarrioRegistro">Seleccione...</select>
+            <p class="my-1">Barrio</p>
+            <select id="slcBarrioRegistro">Seleccione...</select>
 
-                    <p class="my-1">Contraseña</p>
-                    <input type="password" class="" name="txtClaveRegistro">
+            <p class="my-1">Contraseña</p>
+            <input type="password" class="" name="txtClaveRegistro">
 
-                    <p class="my-1">Confirmar contraseña</p>
-                    <input type="password" class="" name="txtConfirmarClaveRegistro">
+            <p class="my-1">Confirmar contraseña</p>
+            <input type="password" class="" name="txtConfirmarClaveRegistro">
 
-                    <p class="my-1">Tipo cliente</p>
-                    <select id="slcTipoClienteRegistro">
-                        <option>Seleccione...</option>
-                    </select>
-                    
-        
-    </section>
-    <section class="col"></section>
-
-    <p id="pMostrar"></p>
-            </section>
-    <section class="row align-items-start">
-        <section class="col">
-            <p>Acepta <a href="#">terminos y servicios</a>
-                <input type="checkbox" id="chkTerminos">
-                <input type="submit" class="BotonAcceder mx-5">
-            </p>
+            <p class="my-1">Numero de Rut</p>
+            <input type="password" class="" name="txtRutRegistro">
         </section>
     </section>
-    </section>
+        <section class="row row text-center mx-5">
+            
+            <p>
+                <input type="checkbox" id="chkTerminos">
+                Acepta <a href="#">terminos y servicios</a>
+                <input type="submit" value="Registrarse" class="BotonAcceder mx-5">
+
+            </p>
+        </section>
+    <p id="pMostrar"></p>
+        
+    
+    <footer class="fixed-bottom">
+        <section class="row text-center mx-0 my-0">
+         <p class="derechos py-2 my-0">© 2023 - Todos los derechos reservados. | Desarrollado por BugSlayer</p>
+        </section>
+    </footer>
 </form>
     <script src="Js/jquery-3.6.4.min.js"></script>
     <script src="Js/clases.js"></script>

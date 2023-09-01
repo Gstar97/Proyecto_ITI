@@ -4,24 +4,23 @@
     border-radius:5px;
     transition:0.1s;
 } 
+.BotonDeRegistro:hover{
+    color:#1D1D1D;
+}
 .BotonDeRegistro:active{
     color:#ffffff;;
     background:#1D1D1D;
 }
 .BotonAcceder{
-    background-color:#FF6200;
-    color:white;
+    color:#ffffff;
+    background:#FF6200;
+    border-radius:2px;
     border:0px;
-    border-radius:5px;
     font-size:20px;
-    font-family:Arial;
+    transition:0.1s;
 }
 .BotonAcceder:active{
-    background-color:black;
-}
-.registro{
-    border:1px solid gray;
-    border-radius:5px;
+    background:#1D1D1D;
 }
 footer section p{
     color:#1D1D1D;
@@ -44,6 +43,23 @@ footer section p{
     transition:0.2s;
 }
 .login input:hover{
+    border-radius:6px;
+    border:2px solid #1D1D1D;
+}
+
+.registro input{
+    border:2px solid #FF6200;
+    transition:0.2s;
+}
+.registro input:hover{
+    border-radius:6px;
+    border:2px solid #1D1D1D;
+}
+.registro select{
+    border:2px solid #FF6200;
+    transition:0.2s;
+}
+.registro select:hover{
     border-radius:6px;
     border:2px solid #1D1D1D;
 }
