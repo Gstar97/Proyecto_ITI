@@ -9,9 +9,11 @@ e.preventDefault();
             method: 'POST',
             body: datos
         })
-            .then(res => res.json())
+            .then(res => res.text())
             .then(data => {
-                console.log(data)
+
+                console.log(data);
+                
                 
             })
 

@@ -1,18 +1,21 @@
 <?php
 
-$cedulaRegistro = $_POST["txtCedulaRegistro"];
-$nombreRegistro = $_POST["txtNombreRegistro"];
-$apellidoRegistro = $_POST["txtApellidoRegistro"];
-$emailRegistro = $_POST["txtEmailRegistro"];
-$telefonoRegistro = $_POST["txtTelefonoRegistro"];
-$direccionRegistro = $_POST["txtDireccionRegistro"];
-$barrioRegistro = $_POST["slcBarrioRegistro"];
-$claveRegistro = $_POST["txtClaveRegistro"];
-$confirmacionClaveRegistro = $_POST["txtConfirmarClaveRegistro"];
-$tipoClienteRegistro = $_POST["slcTipoClienteRegistro"];
+require('claseUsuario.php');
+$ciRegistro = $_POST['txtCedulaRegistro'];
+$nombreRegistro = $_POST['txtNombreRegistro'];
+$apellidoRegistro = $_POST['txtApellidoRegistro'];
+$emailRegistro = $_POST['txtEmailRegistro'];
+$telefonoRegistro = $_POST['txtTelefonoRegistro'];
+$direccionRegistro = $_POST['txtDireccionRegistro'];
+$esquinaRegistro = $_POST['txtEsquinaRegistro'];
+$claveRegistro = $_POST['txtClaveRegistro'];
+$confirmarClaveRegistro = $_POST['txtConfirmarClaveRegistro'];
 
-echo json_encode("Registro exitoso");
+$objUsuario = new Usuario($ciRegistro,$nombreRegistro,$apellidoRegistro,$emailRegistro,$telefonoRegistro,$direccionRegistro,$esquinaRegistro,$claveRegistro,$confirmarClaveRegistro);
 
+
+    echo $objUsuario -> getCiRegistro();
+   
 
 ?>
 
