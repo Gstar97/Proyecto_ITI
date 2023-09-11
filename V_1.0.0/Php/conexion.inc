@@ -4,5 +4,5 @@
      'localhost',
      'root',
      '',
-     'pruebabd');
+     'pruebilla');
 ?>

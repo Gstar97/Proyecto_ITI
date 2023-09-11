@@ -13,7 +13,7 @@ $('#login').submit(function(e){
                 if(response == 0){
                     $('#pMostrarLogin').html("La contraseña o la cedula son incorrectas");
                 }else if (response == 1){
-                    $('#pMostrarLogin').html("Login exitoso");}
+                    window.location.href = "index.html";}
         }); }
         e.preventDefault(); 
     });
