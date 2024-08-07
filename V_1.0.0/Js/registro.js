@@ -1,23 +1,4 @@
-$('#registro').submit(function(e){
-    let cedula = $('#txtCedulaRegistro').val();
-    let nombre = $('#txtNombreRegistro').val();
-    let apellido = $('#txtApellidoRegistro').val();
-    let email = $('#txtEmailRegistro').val();
-    let telefono = $('#txtTelefonoRegistro').val();
-    let tipoCliente = $('#slcTipoClienteRegistro').val();
-    let direccion = $('#txtDireccionRegistro').val();
-    let esquina = $('#txtEsquinaRegistro').val();
-    let barrio = $('#slcBarrioRegistro').val();
-    let clave = $('#txtClaveRegistro').val();
-    let confirmarClave = $('#txtConfirmarClaveRegistro').val();
-    let rut = $('#txtRutRegistro').val();    
-    if (cedula == '' || nombre == '' || apellido == '' || email == '' || telefono == '' || tipoCliente == '' || direccion == '' || esquina == '' || barrio == '' || clave == '' || confirmarClave == ''){
-     $('#pMostrar').html("Completa los campos vacios");
-    }else if (!/[0-9]/.test(cedula) && !/[0-9]/.test(telefono)){
-     $('#pMostrar').html("La cedula y el telefono tiene que ser numerico");
-    }else if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(email)){
-     $('#pMostrar').html("Ingrese un email valido");
-    }else if (!/^[a-zA-Z0-9]+$/.test(direccion)){
+$('#/.test(direccion)){
      $('#pMostrar').html("La direccion esta incompleta");
     }else if (clave != confirmarClave){
      $('#pMostrar').html("Las contraseñia no coinciden");
